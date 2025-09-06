@@ -1,0 +1,89 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+/* Game container */
+#gameContainer {
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+#gameContainer h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Tic Tac Toe grid */
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Each cell */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #d6d6d6;
+}
+
+/* Status text */
+#statusText {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+/* Restart button */
+#restartBtn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restartBtn:hover {
+    background-color: #0056b3;
+}
+
+.win-line {
+  background-color: #90ee90; /* light green highlight */
+  /* text-decoration: line-through; */
+}
